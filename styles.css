@@ -23,7 +23,6 @@ html{
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    align-items: center;
 }
 
 #homepage{
@@ -121,7 +120,7 @@ HOMEPAGE
 .homepage__title
 ,.homepage__sub-title{
     width: 100%;
-    max-width: 800px;
+    max-width: 600px;
     text-align: center;
     line-height: 1.25em;
     margin-bottom: 20px;
@@ -175,11 +174,17 @@ HOMEPAGE
     color: white;
 }
 
-.homepage__figure--wrapper{
-    width: 100%;
-    display: flex;
-    align-items: center;
 
+
+.homepage__figure--wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.homepage__buliding--img{
+    width: 100%;
+    max-width: 450px;
+    margin-top: 20px;
 }
 
 
