@@ -102,5 +102,59 @@ HOMEPAGE
 
 */
 
+.homepage__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homepage__title
+,.homepage__sub-title{
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    line-height: 1.25em;
+}
+
+.homepage__title{
+    font-size: 30px;
+}
+
+.homepage__keyword--search {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.homepage__keyword--input{
+    border-radius: 20px;
+    padding: 0 15px;
+    height: 70px;
+    width: 100%;
+    max-width: 550px;
+    font-size: 24px;
+    padding-left: 25px;
+    border:  1px solid #0a1f44;
+    transition:border-color .2s cubic-bezier(.645,.045,.355,1);
+    line-height: 40px;
+}
+
+.homepage__button--not-loading{
+    margin-left: 20px;
+    font-size: 45px;
+    border-radius: 20px;
+    width: 150px;
+    background-color: #6030b1;
+    border: none;
+    box-shadow: 7px 7px 14px rgb(134 93 204 / 30%);
+    cursor: pointer;
+}
+
+.eye__glass{
+    width:1em;
+    vertical-align: -0.125em;
+    color: white;
+}
 
 
