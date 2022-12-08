@@ -59,6 +59,7 @@ nav {
 
 .logo__img{
     width: 250px;
+    
 }
 
 
@@ -72,7 +73,7 @@ nav {
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
-    color: #e31919;
+    color: white;
     letter-spacing: 0.1em;
 }
 .nav__links a:nth-child(2){
@@ -80,14 +81,14 @@ nav {
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
-    color: #0a1f44;
+    color: white;
     letter-spacing: 0.1em;
 }
 
 .nav__links a:last-child {
     padding: 12px 40px;
-    background-color: #122fe6;
-    color: white;
+    background-color: white;
+    color: red;
     border-radius: 50px;
     font-size: 13px;
     letter-spacing: 1px;
@@ -116,8 +117,9 @@ nav {
 
 .homepage__title{
     font-size: 50px;
-    color: #e31919;
+    color: white;
     margin-bottom: 20px;
+    z-index: 1000;
 }
 
 .homepage__sub-title{
@@ -144,6 +146,7 @@ nav {
     border:  1px solid #0a1f44;
     transition:border-color .2s cubic-bezier(.645,.045,.355,1);
     line-height: 40px;
+    z-index:1000;
 }
 
 
@@ -161,6 +164,23 @@ nav {
     position: absolute;
     right: 30%;
     top: 15%;
+    z-index: 1000;
+}
 
+.background--image{
+    background-image: url(./assets/movie\ postercollage.jpeg);
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    position: absolute;
+    inset: 0px;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    z-index: -1;
+    filter: grayscale(50%);
+    height: 350px;
 }
 
