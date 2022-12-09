@@ -1,1 +1,0 @@
-const movieElem = document.querySelector()
