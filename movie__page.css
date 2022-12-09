@@ -10,7 +10,7 @@
 
 
 .container{
-    padding: 76px 12px;
+    padding: 61px 12px;
 }
 
 .filter-container{
@@ -91,7 +91,7 @@ nav {
 .nav__links a:last-child {
     padding: 12px 40px;
     background-color: white;
-    color: red;
+    color: rgba(206, 39, 39, 1);
     border-radius: 50px;
     font-size: 13px;
     letter-spacing: 1px;
@@ -187,12 +187,29 @@ nav {
     height: 350px;
 }
 
+#search__movies{
+    background-color:rgba(206, 39, 39, 1);
+}
+
 .search__header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 28px 24px;
 
+}
+
+select{
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #dcdfe6;
+    color: #606266;
+    height: 40px;
+    line-height: 40px;
+    outline: #606266;
+    padding: 0 16px;
+    width: 100%;
+    max-width: 200px;
 }
 
 /* .movie__container{
