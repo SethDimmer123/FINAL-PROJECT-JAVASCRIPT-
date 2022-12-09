@@ -7,7 +7,7 @@ async function main(movie) {
     const movies = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=26015f09&s=fast`);
     const moviesData = await movies.json();
     console.log(moviesData)
-    ratedmoviesElem.innerHTML = moviesData.Search.slice(0,5).map(
+    ratedmoviesElem.innerHTML = moviesData.Search.slice(0,6).map(
         (movie) =>                      `
         <div class="movie__container">
         <div class="movie__wrapper">
