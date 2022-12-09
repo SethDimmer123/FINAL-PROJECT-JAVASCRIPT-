@@ -4,7 +4,7 @@
 const ratedmoviesElem = document.querySelector('.movies')
 
 async function main(movie) {
-    const movies = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=26015f09&s=${movie}`);
+    const movies = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=26015f09&s=fast`);
     const moviesData = await movies.json();
     console.log(moviesData)
     ratedmoviesElem.innerHTML = moviesData.Search.map(
