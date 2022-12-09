@@ -218,9 +218,11 @@ select{
 }
 
 .movie{
+    padding: 24px;
     width: 25%;
-    padding: 28px;
 }
+
+
 
 
 
