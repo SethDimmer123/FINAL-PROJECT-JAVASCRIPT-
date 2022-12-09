@@ -42,22 +42,19 @@
     <section id="search__movies">
         <div class="filter-container">
             <div class="row">
-                <div class="movie__header">
+                <div class="search__header">
                     <h1>
                         Search Results:
                     </h1>
+                    <select id="filter" onchange="filterBooks(event)">
+                        <option value="" disabled selected>Sort</option>
+                    </select>
                 </div>
-                <div class="movie__container">
-                    <div class="movie__wrapper">
-                        <figure class="movie__posters">
-                            <img class="movie__poster" src="./assets/movieposter.jpg">
-                        </figure>
-                        <div class="movie__des">
-                            <h2 class="movie__title"></h2>
-                            <h3 class="movie__year"></h3>
-                            <a href="" class="imdb"></a>
-                        </div>
-                    </div>
+                <div class="movie">
+                    <figure class="movie__img--wrapper">
+                        <img class="movie__img" src="./assets/movieposter.jpg">
+                    </figure>
+                    <div class="movie__title"></div>
                 </div>
             </div>
         </div>

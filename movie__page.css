@@ -187,3 +187,21 @@ nav {
     height: 350px;
 }
 
+.search__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 24px;
+
+}
+
+/* .movie__container{
+
+} */
+
+/* .movie__wrapper{
+
+} */
+
+
+
