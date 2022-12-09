@@ -214,12 +214,12 @@ select{
 
 .movies{
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .movie{
-    padding: 24px;
+    padding: 28px;
     width: 25%;
 }
 
