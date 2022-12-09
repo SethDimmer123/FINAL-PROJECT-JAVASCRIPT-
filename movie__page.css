@@ -13,6 +13,10 @@
     padding: 76px 12px;
 }
 
+.filter-container{
+    padding: 12px;
+}
+
 .row{
     width: 100%;
     max-width: 1280px;
