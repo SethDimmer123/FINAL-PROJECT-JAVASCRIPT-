@@ -212,16 +212,11 @@ select{
     max-width: 200px;
 }
 
-.movies{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
-.poster{
-    padding: 28px;
-    width: 45%;
-}
+
+
+
+
 
 
 
