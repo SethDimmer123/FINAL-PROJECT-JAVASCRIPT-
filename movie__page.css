@@ -187,9 +187,9 @@ nav {
     height: 350px;
 }
 
-#search__movies{
+/* #search__movies{
     background-color:rgba(206, 39, 39, 1);
-}
+} */
 
 .search__header{
     display: flex;
@@ -210,6 +210,43 @@ select{
     padding: 0 16px;
     width: 100%;
     max-width: 200px;
+}
+
+.movie-list{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie-card{
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    margin: 80px;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+.user-card__container{
+    padding: 10px 16px 100px 16px;
+}
+
+img{
+    height: 300px;
+}
+
+h3{
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h4{
+    text-align: center;
+    margin-top: 20px;
 }
 
 

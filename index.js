@@ -1,22 +1,22 @@
 // https://www.omdbapi.com/?i=tt3896198&apikey=26015f09&s=fast
 
 
-const ratedmoviesElem = document.querySelector('.movies')
+const ratedmoviesElem = document.querySelector('.movie-list')
 
 async function main(movie) {
     const movies = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=26015f09&s=fast`);
     const moviesData = await movies.json();
     console.log(moviesData)
     ratedmoviesElem.innerHTML = moviesData.Search.slice(0,6).map(
-        (movie) =>                      `
-        <div class="movie__container">
-        <div class="movie__wrapper">
-            <div class="movies">
-                <img class="poster" img src="${movie.Poster}">
-                <div class="movie__des">
-                    <h3 class="movie__header"></h3>
-                    <h5 class="year"></h5>
-                </div>
+        (movie) => 
+       `<div class="movie-list">
+        <div class="movie-card">
+            <div class="user-card__container">
+                <figure>
+                    <img src="${movie.Poster}">
+                    <h3 class="">${movie.Title}</h3>
+                    <h4 class="year">${movie.Year}</h4>
+                </figure>
             </div>
         </div>
     </div>`).join("");
