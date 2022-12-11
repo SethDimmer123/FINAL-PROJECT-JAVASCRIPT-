@@ -315,7 +315,7 @@ h4{
 
 /* SMALL PHONES,TABLETS, LARGE SMARTPHONES */
 
-@media(max-width:768px) {
+@media(max-width:1024px) {
     .nav__links{
         display: none;
     }
