@@ -25,3 +25,4 @@ function movieHTML(movie) {
     </div>
 </div>`;
 }
+
