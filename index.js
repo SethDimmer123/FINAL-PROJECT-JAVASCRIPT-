@@ -4,14 +4,17 @@ const ratedmoviesElem = document.querySelector(".movie-list");
 const searchBar = document.querySelector(".homepage__keyword--input");
 const searchButton = document.querySelector(".homepage__button--absolute");
 
+
+
 async function main(movie) {
+
   const movies = await fetch(
     `https://www.omdbapi.com/?i=tt3896198&apikey=26015f09&s=${movie}`
   );
   const moviesData = await movies.json();
   console.log(moviesData);
   ratedmoviesElem.innerHTML = moviesData.Search.slice(0, 6)
-    .map((movie) => movieHTML(movie))
+  .map((movie) => movieHTML(movie))
     .join("");
 }
 
@@ -27,10 +30,17 @@ function movieHTML(movie) {
                 <h3 class="">${movie.Title}</h3>
                 <h4 class="year">${movie.Year}</h4>
             </figure>
-        </div>
     </div>
 </div>`;
 }
+
+
+
+
+
+
+
+
 
 searchBar.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
