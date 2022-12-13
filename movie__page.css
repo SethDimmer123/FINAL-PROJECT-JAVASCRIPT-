@@ -341,6 +341,12 @@ h4{
 
 }
 
+@media(max-width:500px) {
+    .homepage__button--absolute{
+        left: 80%;
+    }
+}
+
 
 
  
