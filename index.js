@@ -15,7 +15,7 @@ async function main(movie) {
     .join("");
 }
 
-main(localStorage.getItem("searchBarValue") || "spiderman");
+main(localStorage.getItem("searchBarValue") || "");
 localStorage.removeItem("searchBarValue");
 
 function movieHTML(movie) {
