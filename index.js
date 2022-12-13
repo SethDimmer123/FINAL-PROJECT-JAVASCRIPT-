@@ -39,9 +39,6 @@ function movieHTML(movie) {
 
 
 
-
-
-
 searchBar.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     main(searchBar.value);
