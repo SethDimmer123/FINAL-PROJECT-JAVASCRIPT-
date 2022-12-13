@@ -347,6 +347,19 @@ h4{
     }
 }
 
+@media(max-width:290px) {
+    .logo__img{
+        width: 180px;
+    }
+
+    .homepage__button--absolute{
+        left: 70%;
+        background-color: white;
+    }
+}
+
+
+
 
 
  
