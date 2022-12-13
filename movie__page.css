@@ -321,7 +321,8 @@ h4{
     }
 
     .homepage__button--absolute{
-    left: 75%;
+        position: absolute;
+    left: 70%;
     }
 
     .btn__menu{
