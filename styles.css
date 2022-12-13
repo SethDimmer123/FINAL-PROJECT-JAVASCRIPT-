@@ -272,6 +272,15 @@ HOMEPAGE
     .menu__link:hover {
         text-decoration: underline;
     }
+
+    .homepage__keyword--input{
+        width: 100%;
+        max-width: 212px;
+    }
+
+    .logo__img{
+        width: 200px;
+    }
 }
 
 
