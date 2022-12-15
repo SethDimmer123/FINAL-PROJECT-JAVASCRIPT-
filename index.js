@@ -12,7 +12,6 @@ spinner.style.display = "none"
 async function main(movie) {
   spinner.classList += ' movies__loading--spinner'
   if (!movie) return []
-  spinner.style.display = "block"
 
   const movies = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=26015f09&s=${movie}`)
   const moviesData = await movies.json()
@@ -23,7 +22,6 @@ async function main(movie) {
     ratedmoviesElem.innerHTML = moviesData.Search.slice(0, 6)
       .map((movie) => movieHTML(movie))
       .join("")
-    spinner.style.display = "none"
   }, 1000)
   spinner.classList.remove('movies__loading--spinner')
 }
