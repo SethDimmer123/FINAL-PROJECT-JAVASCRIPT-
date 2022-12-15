@@ -12,30 +12,20 @@ spinner.style.display = "none"
 async function main(movie) {
   spinner.classList += ' movies__loading--spinner'
   if (!movie) return []
-
   const movies = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=26015f09&s=${movie}`)
   const moviesData = await movies.json()
   console.log(moviesData)
 
   console.log(spinner)
   setTimeout(() => {
+    spinner.classList.remove('movies__loading--spinner')
     ratedmoviesElem.innerHTML = moviesData.Search.slice(0, 6)
       .map((movie) => movieHTML(movie))
-      .join("")
-  }, 2500)
-  spinner.classList.remove('movies__loading--spinner')
+      .join("");
+  }, 1000)
 }
 
-async function main(movie) {
 
-  const movies = await fetch(
-    `https://www.omdbapi.com/?i=tt3896198&apikey=26015f09&s=${movie}`
-  );
-  const moviesData = await movies.json();
-  console.log(moviesData);
-  ratedmoviesElem.innerHTML = moviesData.Search.slice(0, 6)
-  .map((movie) => movieHTML(movie)).join("");
-}
 
 main(localStorage.getItem("searchBarValue") || "");
 localStorage.removeItem("searchBarValue");
