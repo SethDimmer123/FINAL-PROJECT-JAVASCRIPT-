@@ -321,12 +321,12 @@ h4{
 }
 
 .movies__loading--spinner{
-    display: block !important;
+    display: none !important;
  }
 
-/* .movies__loading .movies__loading--spinner{
+.movies__loading .movies__loading--spinner{
     display: block !important;
- } */
+ }
 
   .fa-spinner {
     animation: rotate 600ms infinite linear;

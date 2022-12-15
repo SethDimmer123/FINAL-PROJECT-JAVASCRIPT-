@@ -22,7 +22,7 @@ async function main(movie) {
     ratedmoviesElem.innerHTML = moviesData.Search.slice(0, 6)
       .map((movie) => movieHTML(movie))
       .join("")
-  }, 1000)
+  }, 2500)
   spinner.classList.remove('movies__loading--spinner')
 }
 
