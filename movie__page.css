@@ -321,11 +321,11 @@ h4{
 }
 
 .movies__loading--spinner{
-    display: none !important;
+    display: block !important;
  }
 
 .movies__loading .movies__loading--spinner{
-    display: block !important;
+    display: none !important;
  }
 
   .fa-spinner {
