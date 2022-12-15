@@ -1,10 +1,32 @@
 // https://www.omdbapi.com/?i=tt3896198&apikey=26015f09&s=movie
 
+let movies;
+
 const ratedmoviesElem = document.querySelector(".movie-list");
 const searchBar = document.querySelector(".homepage__keyword--input");
 const searchButton = document.querySelector(".homepage__button--absolute");
+const spinner = document.querySelector(".movies__loading--spinner")
 
+spinner.style.display = "none"
 
+async function main(movie) {
+  spinner.classList += ' movies__loading--spinner'
+  if (!movie) return []
+  spinner.style.display = "block"
+
+  const movies = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=26015f09&s=${movie}`)
+  const moviesData = await movies.json()
+  console.log(moviesData)
+
+  console.log(spinner)
+  setTimeout(() => {
+    ratedmoviesElem.innerHTML = moviesData.Search.slice(0, 6)
+      .map((movie) => movieHTML(movie))
+      .join("")
+    spinner.style.display = "none"
+  }, 1000)
+  spinner.classList.remove('movies__loading--spinner')
+}
 
 async function main(movie) {
 
@@ -14,8 +36,7 @@ async function main(movie) {
   const moviesData = await movies.json();
   console.log(moviesData);
   ratedmoviesElem.innerHTML = moviesData.Search.slice(0, 6)
-  .map((movie) => movieHTML(movie))
-    .join("");
+  .map((movie) => movieHTML(movie)).join("");
 }
 
 main(localStorage.getItem("searchBarValue") || "");
@@ -33,6 +54,7 @@ function movieHTML(movie) {
     </div>
 </div>`;
 }
+
 
 
 

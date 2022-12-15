@@ -320,13 +320,13 @@ h4{
     justify-content: center;
 }
 
-.movies__loading--spinner{
+/* .movies__loading--spinner{
     display: none !important;
  }
 
 .movies__loading .movies__loading--spinner{
     display: block !important;
- }
+ } */
 
   .fa-spinner {
     animation: rotate 600ms infinite linear;
