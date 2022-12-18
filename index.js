@@ -7,21 +7,19 @@ const searchBar = document.querySelector(".homepage__keyword--input");
 const searchButton = document.querySelector(".homepage__button--absolute");
 const spinner = document.querySelector(".movies__loading--spinner")
 
-spinner.style.display = "none"
+spinner.classList.remove("movies__loading--spinner")
 
 async function main(movie) {
-  spinner.classList += ' movies__loading--spinner'
   if (!movie) return []
+  spinner.classList.add("movies__loading--spinner")
   const movies = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=26015f09&s=${movie}`)
   const moviesData = await movies.json()
-  console.log(moviesData)
 
-  console.log(spinner)
   setTimeout(() => {
-    spinner.classList.remove('movies__loading--spinner')
+    spinner.classList.remove("movies__loading--spinner")
     ratedmoviesElem.innerHTML = moviesData.Search.slice(0, 6)
       .map((movie) => movieHTML(movie))
-      .join("");
+      .join("")
   }, 1000)
 }
 
