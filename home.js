@@ -16,3 +16,5 @@ const homeSearchButton = document.querySelector(
       window.location.href += "/movie__page.html";
     }
   });
+
+  
